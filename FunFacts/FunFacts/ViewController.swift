@@ -13,8 +13,7 @@ class ViewController: UIViewController {
 	@IBOutlet var funFactButton: UIButton!
 	@IBOutlet var funFactLabel: UILabel!
 	let factProvideer = FunFact()
-	
-	
+
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		funFactLabel.text = factProvideer.randomFact()
@@ -27,18 +26,15 @@ class ViewController: UIViewController {
 		let color = getNewColor()
 		view.backgroundColor = color
 		funFactButton.tintColor = color
-		
-		
 	}
-	
+
 	func getRandCGFloat(x: Float, y: Float) -> CGFloat {
 		return CGFloat(Float.random(in: x...y) / 250.0)
 	}
-	
+
 	func getNewColor() -> UIColor {
 		let newColor = UIColor(red: getRandCGFloat(x: 91.0, y: 250.0), green: getRandCGFloat(x: 50.0, y: 250.0), blue: getRandCGFloat(x: 100.0, y: 250.0), alpha: 1.0)
 		return newColor 
 	}
-	
 }
 
