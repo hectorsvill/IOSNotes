@@ -27,9 +27,18 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 	}
 
 	///////////////////////////////////////////////////////////////////////////
+	var dialdNumbersDisplayString = ""
+	
+	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		let number = numbers[indexPath.item]
+		dialdNumbersDisplayString += number
+		collectionView.reloadData()
+	}
 	
 	override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
 		let header =  collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: headerId, for: indexPath) as! DialedNumberHeader
+		header.numbersLabel.text = dialdNumbersDisplayString
+		
 		return header
 	}
 	

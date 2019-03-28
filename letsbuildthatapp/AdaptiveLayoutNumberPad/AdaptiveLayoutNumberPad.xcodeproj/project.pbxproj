@@ -59,8 +59,8 @@
 				E867C6CD224C67F200F9EF76 /* AppDelegate.swift */,
 				E867C6CF224C67F200F9EF76 /* ViewController.swift */,
 				E867C6E3224C92F800F9EF76 /* DialedNumberHeader.swift */,
-				E867C6E1224C725600F9EF76 /* UIViewExtension.swift */,
 				E867C6DF224C696800F9EF76 /* KeyCell.swift */,
+				E867C6E1224C725600F9EF76 /* UIViewExtension.swift */,
 				E867C6D4224C67F200F9EF76 /* Assets.xcassets */,
 				E867C6D9224C67F200F9EF76 /* Info.plist */,
 			);
