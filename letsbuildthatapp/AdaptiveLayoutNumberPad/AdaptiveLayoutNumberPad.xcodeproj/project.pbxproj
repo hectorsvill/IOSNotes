@@ -13,6 +13,8 @@
 		E867C6E0224C696800F9EF76 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E867C6DF224C696800F9EF76 /* KeyCell.swift */; };
 		E867C6E2224C725600F9EF76 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E867C6E1224C725600F9EF76 /* UIViewExtension.swift */; };
 		E867C6E4224C92F800F9EF76 /* DialedNumberHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E867C6E3224C92F800F9EF76 /* DialedNumberHeader.swift */; };
+		E867C6E8224D6C6A00F9EF76 /* GreenCallButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E867C6E7224D6C6A00F9EF76 /* GreenCallButtonCell.swift */; };
+		E867C6EA224D781600F9EF76 /* backSpaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E867C6E9224D781600F9EF76 /* backSpaceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E867C6DF224C696800F9EF76 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 		E867C6E1224C725600F9EF76 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		E867C6E3224C92F800F9EF76 /* DialedNumberHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialedNumberHeader.swift; sourceTree = "<group>"; };
+		E867C6E7224D6C6A00F9EF76 /* GreenCallButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenCallButtonCell.swift; sourceTree = "<group>"; };
+		E867C6E9224D781600F9EF76 /* backSpaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = backSpaceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,12 +61,14 @@
 			isa = PBXGroup;
 			children = (
 				E867C6CD224C67F200F9EF76 /* AppDelegate.swift */,
+				E867C6E7224D6C6A00F9EF76 /* GreenCallButtonCell.swift */,
 				E867C6CF224C67F200F9EF76 /* ViewController.swift */,
 				E867C6E3224C92F800F9EF76 /* DialedNumberHeader.swift */,
 				E867C6DF224C696800F9EF76 /* KeyCell.swift */,
 				E867C6E1224C725600F9EF76 /* UIViewExtension.swift */,
 				E867C6D4224C67F200F9EF76 /* Assets.xcassets */,
 				E867C6D9224C67F200F9EF76 /* Info.plist */,
+				E867C6E9224D781600F9EF76 /* backSpaceCell.swift */,
 			);
 			path = AdaptiveLayoutNumberPad;
 			sourceTree = "<group>";
@@ -137,8 +143,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E867C6E0224C696800F9EF76 /* KeyCell.swift in Sources */,
+				E867C6EA224D781600F9EF76 /* backSpaceCell.swift in Sources */,
 				E867C6D0224C67F200F9EF76 /* ViewController.swift in Sources */,
 				E867C6E2224C725600F9EF76 /* UIViewExtension.swift in Sources */,
+				E867C6E8224D6C6A00F9EF76 /* GreenCallButtonCell.swift in Sources */,
 				E867C6CE224C67F200F9EF76 /* AppDelegate.swift in Sources */,
 				E867C6E4224C92F800F9EF76 /* DialedNumberHeader.swift in Sources */,
 			);

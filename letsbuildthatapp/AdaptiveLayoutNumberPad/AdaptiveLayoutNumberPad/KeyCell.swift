@@ -23,8 +23,8 @@ class KeyCell: UICollectionViewCell {
 	
 	override init(frame: CGRect) {
 		super.init(frame: frame)
-
 		backgroundColor = defaultBGColor
+
 		digitsLabel.text = "2"
 		digitsLabel.font = UIDevice.current.screenType == .iPhones_5_5s_5c_SE ? .systemFont(ofSize: 25) : .systemFont(ofSize: 32)
 		digitsLabel.textAlignment = .center
@@ -32,7 +32,7 @@ class KeyCell: UICollectionViewCell {
 		lettersLabel.text = "A B C"
 		lettersLabel.font = UIDevice.current.screenType == .iPhones_5_5s_5c_SE ? .systemFont(ofSize: 7) : .systemFont(ofSize: 9)
 		lettersLabel.textAlignment = .center
-		
+
 		let stackView = UIStackView(arrangedSubviews: [digitsLabel, lettersLabel])
 		stackView.axis = .vertical
 		addSubview(stackView)
@@ -43,8 +43,6 @@ class KeyCell: UICollectionViewCell {
 		super.layoutSubviews()
 		layer.cornerRadius = self.frame.width / 2
 	}
-	
-	//////////////////////////////////////////////////////////////////////////
 	
 	required init?(coder aDecoder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
