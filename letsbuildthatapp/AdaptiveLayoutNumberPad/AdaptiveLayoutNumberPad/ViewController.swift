@@ -11,11 +11,9 @@ import UIKit
 class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout{
 	fileprivate let cellId = "cellId"
 	fileprivate let headerId = "headerId"
-
 	let numbers = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "*", "0", " #"]
 	let letter = ["", "A B C", "D E F", "G H I", "J K L", "M N O", "P Q R S", "T U V", " W X Y Z", " ", "+", ""]
-	
-	
+	var dialdNumbersDisplayString = ""
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -27,7 +25,7 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 	}
 
 	///////////////////////////////////////////////////////////////////////////
-	var dialdNumbersDisplayString = ""
+	
 	
 	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		let number = numbers[indexPath.item]
