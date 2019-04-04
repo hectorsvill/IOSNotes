@@ -9,7 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+	
+	let tableView = UITableView()
 	let cellId = "cellId"
+	
+	
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		view.backgroundColor = .white
+		view.addSubview(tableView)
+		tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+	}
+}
+
+
+extension ViewController {
+	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return 4
 	}
@@ -20,9 +35,4 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 		return cell
 	}
 	
-	override func viewDidLoad() {
-		super.viewDidLoad()
-		view.backgroundColor = .white
-	}
 }
-
