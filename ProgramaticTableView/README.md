@@ -109,10 +109,26 @@ func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> U
 
 #
 
-#### We wont be able to see the textlabel because we need to register :
+#### We wont be able to see the textlabel because 
+- 1.we need to register the  dequeueReusableCell 
+- 2.achor the tableView:
+
+###### 1.Create a constant for the tableView ( you should have two constants ):
 ```swift
-tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)
+let tableView = UITableView()
+let cellId = "cellId"
 ```
+
+###### Now add sub view and use .register:
+
+```swift
+view.addSubview(tableView)
+tableView.translatesAutoresizingMaskIntoConstraints = false
+tableView.delegate = self
+tableView.dataSource = self
+tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+```
+
 
 ##### Your viewDidLoad function should look like this:
 ```swift
@@ -120,6 +136,9 @@ override func viewDidLoad() {
 	super.viewDidLoad()
 	view.backgroundColor = .white
 	view.addSubview(tableView)
+	tableView.translatesAutoresizingMaskIntoConstraints = false
+	tableView.delegate = self
+	tableView.dataSource = self
 	tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
 }
 
@@ -128,13 +147,28 @@ override func viewDidLoad() {
 
 #
 
-#### Create a constant for the tableView(you should have two constants):
+
+#### 2. Now anchor our tableview to the ViewController.
+- I will create an extend UIView and make a function to anchor the tableView
 ```swift
-let tableView = UITableView()
-let cellId = "cellId"
+
+extension UIView {
+	func setupTableViewAnchor(tableView: UITableView, view: UIView) {
+		NSLayoutConstraint.activate([
+			tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+			tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+			tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+			tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+		])
+	}
+}
+
 ```
 
-#### But you still wont see anything becasuse we have to anchor our tableview to the ViewController
-```swift
+#
 
+#### And Call the function in viewDidLoad() 
+
+```swift
+view.setupTableViewAnchor(tableView: tableView, view: view)
 ```

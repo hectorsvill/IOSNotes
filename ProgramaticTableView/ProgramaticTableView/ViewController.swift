@@ -18,7 +18,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 		super.viewDidLoad()
 		view.backgroundColor = .white
 		view.addSubview(tableView)
+		tableView.translatesAutoresizingMaskIntoConstraints = false
+		
+		tableView.delegate = self
+		tableView.dataSource = self
+		
+		
 		tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellId)
+		view.setupTableViewAnchor(tableView: tableView, view: view)
 	}
 }
 
@@ -35,4 +42,15 @@ extension ViewController {
 		return cell
 	}
 	
+}
+
+extension UIView {
+	func setupTableViewAnchor(tableView: UITableView, view: UIView) {
+		NSLayoutConstraint.activate([
+			tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+			tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+			tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
+			tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
+			])
+	}
 }
