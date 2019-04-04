@@ -1,8 +1,18 @@
-# UIKit Notes
-
-
-- Construct and manage a graphical, event-driven user interface for your iOS or tvOS app. 
+##Basic UITableView
 #
 #
+####Delete following files:
+-Main.storyboard
+-LaunchScreen.storyboard
+-also remove Main from Main InterFace
 
-[About App Development with UIKit](https://developer.apple.com/documentation/uikit/about_app_development_with_uikit)
+#
+#
+#####Open AppDelegate.swift and go to this function:
+
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+	// Override point for customization after application launch.
+	return true
+}
+```
