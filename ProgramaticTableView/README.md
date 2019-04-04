@@ -62,4 +62,46 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-#### 
+#
+
+#### Go back to ViewController.swift 
+ 
+ - Make ViewContrller class inherit from UITableViewDataSource and  UITableViewDelegate 
+ - You will get an error, but thats O.K. just click fix.
+ 
+ ##### Your ViewController Class should look like this 
+
+```swift
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	
+	}
+
+	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+		
+	}
+
+	override func viewDidLoad() {
+		super.viewDidLoad()
+		view.backgroundColor = .white
+	}
+}
+```
+#
+
+#### Now we have to set both functions and create a variable for cellId
+
+```swift
+
+let cellId = "cellId"
+func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+	return 4
+}
+
+func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+	let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath)	
+	cell.textLabel?.text = "\(indexPath.row)"
+	return cell
+}
+
+```
