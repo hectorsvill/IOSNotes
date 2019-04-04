@@ -29,12 +29,16 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 
 ```
+#
 
-#### Head over too ViewController.swift chage back ground color to green
+#### Head over too ViewController.swift change back ground color to white because deafault is black
 
 ```swift
-view.backgroundColor = .green
+view.backgroundColor = .white
 ```
+
+#
+
 ##### So your ViewController Class Should look like this
 
 ```swift
@@ -45,5 +49,17 @@ class ViewController: UIViewController {
 	}
 }
 ```
+#
 
+#### Go back to AppDelegate.swift to add  a navigation Controller 
 
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+	window = UIWindow(frame: UIScreen.main.bounds)
+	window?.makeKeyAndVisible()
+	window?.rootViewController = UINavigationController(rootViewController: ViewController())
+	return true
+}
+```
+
+#### 
