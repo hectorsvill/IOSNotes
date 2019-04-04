@@ -35,8 +35,10 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 	override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
 		
 		//backspace index path
-		if indexPath.item == 1 && indexPath.section == 1 {
-			dialdNumbersDisplayString = String(dialdNumbersDisplayString.dropLast())
+		 if indexPath.section == 1 {
+			if indexPath.item == 1 {
+				dialdNumbersDisplayString = String(dialdNumbersDisplayString.dropLast())
+			}
 		} else {
 			let number = numbers[indexPath.item]
 			dialdNumbersDisplayString += number
