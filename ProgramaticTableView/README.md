@@ -149,7 +149,7 @@ override func viewDidLoad() {
 
 
 #### 2. Now anchor our tableview to the ViewController.
-- I will create an extend UIView and make a function to anchor the tableView
+- I will create an extension UIView and make a function to anchor the tableView
 ```swift
 
 extension UIView {
