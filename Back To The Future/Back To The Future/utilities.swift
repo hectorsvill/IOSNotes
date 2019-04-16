@@ -8,12 +8,34 @@
 
 import Foundation
 
-class utilities {
-	func getCurentYears () -> String {
+class Utilities {
+	func getCurentYear () -> String {
 		let date = Date()
 		let calender = Calendar.current
-		
-		
-		return String(calender.component(.year, from: date))
+		let str = String(calender.component(.year , from: date))
+		return str
 	}
+	
+	func getLetterIndex (str: String, location: Int) -> String {
+		let index = str.index(str.startIndex, offsetBy:  location)
+		return String(str[index])
+	}
+	
+	func getCurrentTime() -> String {
+		let date = Date()
+		
+		
+		let formater = DateFormatter()
+		formater.dateStyle = .none
+		formater.timeStyle = .medium
+		
+		let timeStr = formater.string(from: date)
+		return timeStr
+	}
+	
+	func getRandomYear () -> String {
+		let x = Int(getCurentYear())! + 1
+		return String(Int.random(in: x...x+1000 ))
+	}
+	
 }

@@ -14,6 +14,7 @@
 		E8299E7E22644BAD0012E645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8299E7D22644BAD0012E645 /* Assets.xcassets */; };
 		E8299E8122644BAD0012E645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8299E7F22644BAD0012E645 /* LaunchScreen.storyboard */; };
 		E8299E89226453250012E645 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8299E88226453250012E645 /* utilities.swift */; };
+		E8299E8B2265A6BE0012E645 /* UIView+Exntend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8299E8A2265A6BE0012E645 /* UIView+Exntend.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		E8299E8022644BAD0012E645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8299E8222644BAD0012E645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E8299E88226453250012E645 /* utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
+		E8299E8A2265A6BE0012E645 /* UIView+Exntend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Exntend.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				E8299E7422644BAC0012E645 /* AppDelegate.swift */,
 				E8299E7622644BAC0012E645 /* FirstViewController.swift */,
+				E8299E8A2265A6BE0012E645 /* UIView+Exntend.swift */,
 				E8299E88226453250012E645 /* utilities.swift */,
 				E8299E7822644BAC0012E645 /* SecondViewController.swift */,
 				E8299E7A22644BAC0012E645 /* Main.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				E8299E7922644BAC0012E645 /* SecondViewController.swift in Sources */,
 				E8299E7522644BAC0012E645 /* AppDelegate.swift in Sources */,
+				E8299E8B2265A6BE0012E645 /* UIView+Exntend.swift in Sources */,
 				E8299E89226453250012E645 /* utilities.swift in Sources */,
 				E8299E7722644BAC0012E645 /* FirstViewController.swift in Sources */,
 			);

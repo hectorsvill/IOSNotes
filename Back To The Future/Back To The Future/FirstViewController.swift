@@ -16,14 +16,27 @@ class FirstViewController: UIViewController {
 	@IBOutlet var label4: UILabel!
 	@IBOutlet var timeLabel: UILabel!
 	
+	var timer = Timer()
+	let util = Utilities()
+
+	
 	override func viewDidLoad() {
 		super.viewDidLoad()
 		view.backgroundColor = .gray
-		// Do any additional setup after loading the view.
-		timeLabel.text = "hectorsvill"
-		print(utilities().getCurentYears())
+		let year = util.getCurentYear()
+		timeLabel.text = util.getCurrentTime()
+		view.setLabels(label1, label2, label3, label4, year)
+		timer = .scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(tic), userInfo: nil, repeats: true)
 	}
-
 	
+	@objc func tic() {
+		timeLabel.text = util.getCurrentTime()
+		
+		UIView.animate(withDuration: 1.0, delay: 0, options: [], animations: {
+			self.view.alpha = 0.5
+		}) { (true) in
+			self.view.alpha = 1.0
+		}
+	}
 }
 

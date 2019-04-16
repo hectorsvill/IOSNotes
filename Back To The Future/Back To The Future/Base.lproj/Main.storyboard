@@ -66,8 +66,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAt-ER-RGW">
-                                <rect key="frame" x="82" y="520" width="250" height="35.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAt-ER-RGW">
+                                <rect key="frame" x="82" y="520" width="250" height="0.0"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="250" id="PS6-aC-u9k"/>
                                 </constraints>
@@ -91,7 +91,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Time Now" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Time Now" image="first" id="acW-dT-cKf">
+                        <color key="badgeColor" name="selectedContentBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </tabBarItem>
                     <connections>
                         <outlet property="label1" destination="FT6-hR-T9h" id="9Yz-oB-WM0"/>
                         <outlet property="label2" destination="GUi-Jb-hrn" id="7o2-UM-ihE"/>
@@ -104,21 +106,101 @@
             </objects>
             <point key="canvasLocation" x="749.27536231884062" y="-320.08928571428572"/>
         </scene>
-        <!--Second-->
+        <!--Time Travel-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Back_To_The_Future" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVH-3N-YKL">
+                                <rect key="frame" x="105" y="426" width="44" height="44"/>
+                                <color key="backgroundColor" name="selectedContentBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="VXr-bl-5OK"/>
+                                    <constraint firstAttribute="width" constant="44" id="rHU-4O-kfZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cig-wy-di6">
+                                <rect key="frame" x="157" y="426" width="44" height="44"/>
+                                <color key="backgroundColor" name="selectedContentBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="5VC-VZ-1B0"/>
+                                    <constraint firstAttribute="height" constant="44" id="IBq-gS-qkJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efN-Ha-nYQ">
+                                <rect key="frame" x="209" y="426" width="44" height="44"/>
+                                <color key="backgroundColor" name="selectedContentBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="G2o-6w-LHu"/>
+                                    <constraint firstAttribute="height" constant="44" id="ltv-aO-exm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ai-p6-2qJ">
+                                <rect key="frame" x="261" y="426" width="44" height="44"/>
+                                <color key="backgroundColor" name="selectedContentBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="mcj-MK-abF"/>
+                                    <constraint firstAttribute="width" constant="44" id="pBC-u2-THG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kic-Km-Y2X">
+                                <rect key="frame" x="87" y="562" width="240" height="28"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="16"/>
+                                <state key="normal" title="Go To The Future!">
+                                    <color key="titleColor" white="0.0" alpha="0.75998569540000005" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.35294117650000001" green="0.70588235290000001" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="godocButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="Nvo-n4-mSa"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="efN-Ha-nYQ" firstAttribute="leading" secondItem="Cig-wy-di6" secondAttribute="trailing" constant="8" id="0ld-YT-DcW"/>
+                            <constraint firstItem="oVH-3N-YKL" firstAttribute="centerY" secondItem="QS5-Rx-YEW" secondAttribute="centerY" id="2br-jd-MxK"/>
+                            <constraint firstItem="4Ai-p6-2qJ" firstAttribute="leading" secondItem="efN-Ha-nYQ" secondAttribute="trailing" constant="8" id="7pT-Wf-QvB"/>
+                            <constraint firstItem="Cig-wy-di6" firstAttribute="leading" secondItem="oVH-3N-YKL" secondAttribute="trailing" constant="8" id="BNd-tt-hJP"/>
+                            <constraint firstItem="Cig-wy-di6" firstAttribute="top" secondItem="oVH-3N-YKL" secondAttribute="top" id="Y7z-dp-FGr"/>
+                            <constraint firstItem="Kic-Km-Y2X" firstAttribute="top" secondItem="oVH-3N-YKL" secondAttribute="bottom" constant="92" id="eb3-qe-K5Y"/>
+                            <constraint firstItem="Kic-Km-Y2X" firstAttribute="leading" secondItem="O1u-W8-tvY" secondAttribute="leading" constant="87" id="ewc-v8-zue"/>
+                            <constraint firstItem="oVH-3N-YKL" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" constant="-80" id="gJC-PQ-ypL"/>
+                            <constraint firstItem="4Ai-p6-2qJ" firstAttribute="top" secondItem="oVH-3N-YKL" secondAttribute="top" id="liq-QR-sTX"/>
+                            <constraint firstItem="Kic-Km-Y2X" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="lqo-zT-Xgt"/>
+                            <constraint firstItem="efN-Ha-nYQ" firstAttribute="top" secondItem="oVH-3N-YKL" secondAttribute="top" id="p9z-qf-5Xm"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Time Travel" image="second" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="label1" destination="oVH-3N-YKL" id="M8Y-7U-i8m"/>
+                        <outlet property="label2" destination="Cig-wy-di6" id="pmY-sw-F5t"/>
+                        <outlet property="label3" destination="efN-Ha-nYQ" id="PvA-7M-hGk"/>
+                        <outlet property="label4" destination="4Ai-p6-2qJ" id="sHR-7z-Q73"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="749.27536231884062" y="359.59821428571428"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
